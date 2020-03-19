@@ -1,4 +1,4 @@
-# Pipeline for rnaseq
+# RNAseq Pipeline
 ## Build the index for STAR and RSEM
  
 ### Generate genome STAR indexes
