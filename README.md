@@ -90,7 +90,7 @@ In this quality control step, we compute three types of quality control metrics:
 
 ```{r,eval=FALSE}
 $PathToRNASeQC/rnaseqc
-$PathToGTF/gencode.v7.annotation_goodContig.gtf  data/outputname.Aligned.sortedByCoord.out.patched.md.bam 
+$PathToGTF/gencode.v19.annotation.patched_contigs.gtf data/outputname.Aligned.sortedByCoord.out.patched.md.bam 
 data/ 
 ```
 
