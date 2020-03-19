@@ -76,16 +76,24 @@ Assume the RNASeQC tools are located under $PathToRNASeQC.
 
 The input file <outputname.Aligned.sortedByCoord.out.patched.md.bam> is generated from the mark duplicates step. 
 
-All the output will be stored in the data/ directory.
+All the output will be stored in the data directory.
 
 ## RSEM Transcription quantification
 In this step, we map reads to transcriptome and calculate the transcript expression quantification.
 
 ```{r,eval=FALSE}
-python3 $PathToPY/run_RSEM.py $PathToRef/rsem_reference data/outputname.fastq.gz.Aligned.toTranscriptome.out.bam 
+python3 $PathToPY/run_RSEM.py 
+$PathToRef/rsem_reference
+star_out/outputname.fastq.gz.Aligned.toTranscriptome.out.bam 
 data/ 
 --threads 4
 ```
+
+The generated rsem reference files are installed under $PathToRef/rsem_reference as described in the above step.
+
+The input data <outputname.fastq.gz.Aligned.toTranscriptome.out.bam> is generated in the star alignment step and stored under data/star_out directory. 
+
+All the output will be generated in the data directory.
 
 
 
